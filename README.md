@@ -40,13 +40,45 @@ Steps
   X $ sudo su
   X $ exit
   ```
-- Install X11VNC on RPi to use with TightVNC Viewer over Local LAN Connection
-  - For TightVNC Instructions, see <a href="https://github.com/MercersKitchen/BYOD#tightvnc">Mercer's Kitchen BYOD Repository</a>, and <a href="https://github.com/MercersKitchen/BYOD/tree/master/TightVNC">TightVNC Viewing .exe downloadable</a>
+- [] Install X11VNC on RPi to use with TightVNC Viewer over Local LAN Connection
+  - For TightVNC Viewer Instructions for a Windows OS, see <a href="https://github.com/MercersKitchen/BYOD#tightvnc">Mercer's Kitchen BYOD Repository</a>, and <a href="https://github.com/MercersKitchen/BYOD/tree/master/TightVNC">TightVNC Viewing .exe downloadable</a>
+  - Installation of TightVNC Server on RPi (CAUTION: RPi must be secured with unique username and password already)
+    - ```X $ sudo apt update``` must be done since reboot, before installing any programs
+  ```
+  X $ sudo apt install x11vnc
+  ```
+  - Note: password is needed when not in a secure LAN
+- [] Must find RPi IP Address
+  - ```X $ ifconfig```, must have head-monitor until IP-Address is known
+  - Possible other headless methods: to find IP Address of RPi
+    -
+      ```
+      X $ arp -a | X $ sudo arp -a
+      ```
+    - Angry IP Scanner
+    - SolarWinds IP Tracker
+    - My Lan Viewer
+    - ```X $ sudo nmap -sS 192.168.1.0/24```
+    - Login to the Router and look up the IP Table (specific instructions change depending on the router)
+- [] Configure ```X $ ifconfig``` : enabled SSH & VNC using IP Address, record port X11vnc is using
+- [] Use PuTTy or CDM.exe to SSH into RPi (perhaps start x11vnc)
+  - SSH port is 22
+  - Starting X11VNC: ```X $ X11VNC```
+- [] Use TightVNC on Viewing Computer, needs socket (and x11vnc to be started) so remember the port number for X11VNC (5900 or 5901)
+- [] Test that SSH and TightVNC Works
+
+Note: 
+- [] RPi as a WireGuard Server must be left on, IP from Router should be "static" (Look up how to configure Static IP Address)
 
 ---
 
 # To Include
 
 Figure out a way to include MD5 Hashing, possible project with Michael (Lilian Osborn)
+
+Look up how to configure Static IP Address on the RPi
+
+Also, look up how to configure a Static IP Address on the DHCP Service on the Router
+
 
 ---
