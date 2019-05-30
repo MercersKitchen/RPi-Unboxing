@@ -25,7 +25,7 @@ Steps
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
   - All settings were OK, 20190305
   - Note: Verify Expanded Memory: Advanced Options / run Expand memory to entire card, OK 20190305
-- [] Update, Upgrade, Reboot, and Clean OS (to most current)
+- [] Update, Upgrade, Reboot, and Clean OS (to most current Linux Packages)
   - Note: Update-Upgrade-Reboot should be completed every time RPi is started
   ```
   X $ sudo apt update
@@ -38,8 +38,10 @@ Steps
   - CAUTION: as superuser shell, no protection exists from mistakes ... so do not make any or do not use this method if you are unsure
   ```
   X $ sudo su
-  X $ exit 
+  X $ exit
   ```
+- Install X11VNC on RPi to use with TightVNC Viewer over Local LAN Connection
+  - For TightVNC Instructions, see <a href="https://github.com/MercersKitchen/BYOD#tightvnc">Mercer's Kitchen BYOD Repository</a>, and <a href="https://github.com/MercersKitchen/BYOD/tree/master/TightVNC">TightVNC Viewing .exe downloadable</a>
 
 ---
 
