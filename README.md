@@ -6,6 +6,8 @@ How to Unbox a Raspberry Pi and get it ready for Mercer's Kitchen Projects
 
 Preparation
 - RPi should be on Ethernet Connection until BIOS and WiFi Configured (note: unboxed settings are Great Britain, not Canadian)
+- WiFi is never preferred for stability and security reasons
+
 - Notes about Passwords:
   - Saving WiFi Credentials (i.e. user name and password) on a Pi can be looked up, especially if password is not changed
   - All RPi's have same default username and password, published world wide
@@ -51,10 +53,7 @@ Steps
 - [] Must find RPi IP Address
   - ```X $ ifconfig```, must have head-monitor until IP-Address is known
   - Possible other headless methods: to find IP Address of RPi
-    -
-      ```
-      X $ arp -a | X $ sudo arp -a
-      ```
+    - Using ARP Command on Windows Machine: ```X $ arp -a | X $ sudo arp -a```
     - Angry IP Scanner
     - SolarWinds IP Tracker
     - My Lan Viewer
