@@ -29,7 +29,7 @@ Steps
   - Note: Update-Upgrade-Reboot should be completed every time RPi is started
   ```
   X $ sudo apt update
-  X $ sudo apt update
+  X $ sudo apt upgrade
   X $ sudo reboot
   X $ sudo apt clean
   ```
@@ -67,7 +67,7 @@ Steps
 - [] Use TightVNC on Viewing Computer, needs socket (and x11vnc to be started) so remember the port number for X11VNC (5900 or 5901)
 - [] Test that SSH and TightVNC Works
 
-Note: 
+Note:
 - [] RPi as a WireGuard Server must be left on, IP from Router should be "static" (Look up how to configure Static IP Address)
 
 ---
