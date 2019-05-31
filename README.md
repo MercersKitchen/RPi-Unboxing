@@ -42,6 +42,8 @@ Steps
   X $ sudo su
   X $ exit
   ```
+  - Cleaner output
+  - Note: typing `sudo` when already at root does nothing, redundant
 - [] Install X11VNC on RPi to use with TightVNC Viewer over Local LAN Connection
   - For TightVNC Viewer Instructions for a Windows OS, see <a href="https://github.com/MercersKitchen/BYOD#tightvnc">Mercer's Kitchen BYOD Repository</a>, and <a href="https://github.com/MercersKitchen/BYOD/tree/master/TightVNC">TightVNC Viewing .exe downloadable</a>
   - Installation of TightVNC Server on RPi (CAUTION: RPi must be secured with unique username and password already)
@@ -61,6 +63,7 @@ Steps
     - Login to the Router and look up the IP Table (specific instructions change depending on the router)
 - [] Configure ```X $ ifconfig``` : enabled SSH & VNC using IP Address, record port X11vnc is using
 - [] Use PuTTy or CDM.exe to SSH into RPi (perhaps start x11vnc)
+  - Test SSH & TightVNC usablitiy
   - SSH port is 22
   - Starting X11VNC: ```X $ X11VNC```
 - [] Use TightVNC on Viewing Computer, needs socket (and x11vnc to be started) so remember the port number for X11VNC (5900 or 5901)
@@ -68,6 +71,24 @@ Steps
 
 Note:
 - [] RPi as a WireGuard Server must be left on, IP from Router should be "static" (Look up how to configure Static IP Address)
+
+---
+
+WireGuard or Router Application Additional Step: Enabling RPi IPv4 Forwarding
+
+```
+pi@raspberrypi:~ $ sysctl net.ipv4.ip_forward
+```
+
+```
+Return: net.ipv4.ip_forward = 1
+```
+
+If you did that then routing on the pi is enabled so that's good.
+
+If you get ```net.ipv4.ip_forward = 0```,
+please manually edit ```X $ sudo nano /etc/sysctl.conf``` and add ```net.ipv4.ip_forward = 1```
+- comment out `=0` line
 
 ---
 
