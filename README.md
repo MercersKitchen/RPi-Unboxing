@@ -8,6 +8,11 @@ Preparation
 - RPi should be on Ethernet Connection until BIOS and WiFi Configured (note: unboxed settings are Great Britain, not Canadian)
 - WiFi is never preferred for stability and security reasons
 
+General Hardware Setup
+- Full setup, then headless
+- Ensured, Putty, TightVNC, and X11VNC
+- Headless is done with outside IP (not 169.254.xxx.xxx), bridged connection through Network Connections
+
 - Notes about Passwords:
   - Saving WiFi Credentials (i.e. user name and password) on a Pi can be looked up, especially if password is not changed
   - All RPi's have same default username and password, published world wide
