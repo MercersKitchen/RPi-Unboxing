@@ -20,8 +20,15 @@ General Hardware Setup
 
 Steps
 - [] Unbox and install all hardware as indicated
-- [] Use an SD Card reader-writer to install Raspbian OS
+- [] Use an SD Card reader-writer to install Raspbian OS (have this ready)
 - [] Download <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian OS</a>, accessed 20190530
+  - Making the process faster: download <a href="https://www.freedownloadmanager.org/">"Free Download Manager"</a>, accessed 20190605
+  - MercersKitchen used fdm5_x64_setup.exe
+  - Use it to download Raspbian OS
+  - Able to use Torrent
+  - Do not use to "Catch all downloads from Chrome"
+  - Drag and Drop URL to Download: RightClick in Webpage on Download Link, copy URL
+  - In FDM / Click + / URL should populate from Clipboard / Change Folder / Start Download
 - [] Check SHA-256, accessed 20190530
 - [] Locate the Raspbian OS Installation Documentation, accessed 20190530, for additional software and instructions
 - [] Ensure SD Card is empty, ```formatted must be "overwritten"```, see <a href="https://www.sdcard.org/downloads/formatter/">SD Formatter</a>
