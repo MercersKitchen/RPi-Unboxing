@@ -29,6 +29,7 @@ Steps
   - Do not use to "Catch all downloads from Chrome"
   - Drag and Drop URL to Download: RightClick in Webpage on Download Link, copy URL
   - In FDM / Click + / URL should populate from Clipboard / Change Folder / Start Download
+  - Save the download to a parent folder on the CDrive (makes imaging the SD Card easier due to write distances)
 - [] Check SHA-256, accessed 20190605
   - See instructions from https://github.com/MercersKitchen/BYOD#md5-checksum-file-integrity
   - Use CMD: ```c:```, ```cd```
