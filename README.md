@@ -33,6 +33,7 @@ Steps
   - See instructions from https://github.com/MercersKitchen/BYOD#md5-checksum-file-integrity
   - Use CMD: ```c:```, ```cd```
   - Copy Command and change the ```FILENAME```
+  - Verify the Checksum Output in Notepad: website answer with downloaded answer
 - [] Locate the Raspbian OS Installation Documentation, accessed 20190530, for additional software and instructions
 - [] Ensure SD Card is empty, ```formatted must be "overwritten"```, see <a href="https://www.sdcard.org/downloads/formatter/">SD Formatter</a>
   - New cards might work with a quick format, error will only show at very end of installation (means you would have to start all over again)
