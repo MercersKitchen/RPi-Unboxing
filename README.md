@@ -29,7 +29,10 @@ Steps
   - Do not use to "Catch all downloads from Chrome"
   - Drag and Drop URL to Download: RightClick in Webpage on Download Link, copy URL
   - In FDM / Click + / URL should populate from Clipboard / Change Folder / Start Download
-- [] Check SHA-256, accessed 20190530
+- [] Check SHA-256, accessed 20190605
+  - See instructions from https://github.com/MercersKitchen/BYOD#md5-checksum-file-integrity
+  - Use CMD: ```c:```, ```cd```
+  - Copy Command and change the ```FILENAME```
 - [] Locate the Raspbian OS Installation Documentation, accessed 20190530, for additional software and instructions
 - [] Ensure SD Card is empty, ```formatted must be "overwritten"```, see <a href="https://www.sdcard.org/downloads/formatter/">SD Formatter</a>
   - New cards might work with a quick format, error will only show at very end of installation (means you would have to start all over again)
