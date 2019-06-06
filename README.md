@@ -41,7 +41,7 @@ Steps
   - Best Practice: use the overwrite feature
   - CAUTION: ensure the drive letter is correct before formatting (use File Explorer to verify)
   - Note: if SD Formatter doesn't work, format the SD Card to FAT23 (4Gb max file size) or NTFS (larger file size available in Windows 10)
-- [] Write the ```.img``` file to the SD Card, see Raspberry Pi for latest recommendation (see balenaEtcher-Setup-1.4.9-x64.exe (includes installer, a program installer), <a href="https://www.balena.io/etcher/">accessed 20190606</a>)
+- [] Write the ```.img``` file to the SD Card, see Raspberry Pi for latest recommendation (see balenaEtcher-Setup-1.4.9-x64.exe (includes great installer), <a href="https://www.balena.io/etcher/">accessed 20190606</a>)
   - Instructions for are part of the design for Etcher, a huge positive :), also has a Github Repo for those wanting to contribute
   - Optional: Win32DiskImager, <a href="https://sourceforge.net/projects/win32diskimager/">accessed 20190606</a>
     - Instructions are <a href="https://raspberry-projects.com/pi/pi-operating-systems/win32diskimager">here, accessed 20190606</a>
