@@ -35,9 +35,12 @@ Steps
   - Use CMD: ```c:```, ```cd```
   - Copy Command and change the ```FILENAME```
   - Verify the Checksum Output in Notepad: website answer with downloaded answer
-- [] Locate the Raspbian OS Installation Documentation, accessed 20190530, for additional software and instructions
+- [] Locate the Raspbian OS Installation Documentation, <a href="https://www.raspberrypi.org/documentation/installation/installing-images/">accessed 20190530</a>, for additional software and instructions
 - [] Ensure SD Card is empty, ```formatted must be "overwritten"```, see <a href="https://www.sdcard.org/downloads/formatter/">SD Formatter</a>
   - New cards might work with a quick format, error will only show at very end of installation (means you would have to start all over again)
+  - Best Practice: use the overwrite feature
+  - CAUTION: ensure the drive letter is correct before formatting (use File Explorer to verify)
+  - Note: if SD Formatter doesn't work, format the SD Card to FAT23 (4Gb max file size) or NTFS (larger file size available in Windows 10)
 - [] Write the .img file to the SD Card, see Raspberry Pi for latest recommendation (see balenaEtcher-Setup-1.4.9-x64.exe)
 - [] RPi complete SD Card installation, see <a href="https://www.raspberrypi.org/documentation/linux/software/apt.md">APT on RPi Documentation</a>, accessed 20190530
 - [] Configure ```Boot Settings``` with GUI and follow the prompts
