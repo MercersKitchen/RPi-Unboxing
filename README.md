@@ -45,6 +45,7 @@ Steps
   - Instructions for are part of the design for Etcher, a huge positive :), also has a Github Repo for those wanting to contribute
   - Optional: Win32DiskImager, <a href="https://sourceforge.net/projects/win32diskimager/">accessed 20190606</a>
     - Instructions are <a href="https://raspberry-projects.com/pi/pi-operating-systems/win32diskimager">here, accessed 20190606</a>
+- **Lesson Interruption**: if the lesson is interrupted, put the SD Card into the card reader and label the Card Reader with the student's name, return everything the next lesson with a RPi to connect locally
 - [] RPi complete SD Card installation, see <a href="https://www.raspberrypi.org/documentation/linux/software/apt.md">APT on RPi Documentation</a>, accessed 20190530
 - [] Configure ```Boot Settings``` with GUI and follow the prompts
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
