@@ -41,7 +41,10 @@ Steps
   - Best Practice: use the overwrite feature
   - CAUTION: ensure the drive letter is correct before formatting (use File Explorer to verify)
   - Note: if SD Formatter doesn't work, format the SD Card to FAT23 (4Gb max file size) or NTFS (larger file size available in Windows 10)
-- [] Write the .img file to the SD Card, see Raspberry Pi for latest recommendation (see balenaEtcher-Setup-1.4.9-x64.exe)
+- [] Write the ```.img``` file to the SD Card, see Raspberry Pi for latest recommendation (see balenaEtcher-Setup-1.4.9-x64.exe, <a href="">accessed 20190606</a>)
+  - Instructions for
+  - Optional: Win32DiskImager, <a href="https://sourceforge.net/projects/win32diskimager/">accessed 20190606</a>
+    - Instructions are <a href="https://raspberry-projects.com/pi/pi-operating-systems/win32diskimager">here, accessed 20190606</a>
 - [] RPi complete SD Card installation, see <a href="https://www.raspberrypi.org/documentation/linux/software/apt.md">APT on RPi Documentation</a>, accessed 20190530
 - [] Configure ```Boot Settings``` with GUI and follow the prompts
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
