@@ -58,7 +58,8 @@ Steps
   - Setup Screen: ensure geometry is OK
   - WiFi: skip
   - Update Software: skip (until we have headless network access)
-
+  - CLICK Restart
+  
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
   - All settings were OK, 20190305
   - Note: Verify Expanded Memory: Advanced Options / run Expand memory to entire card, OK 20190305
