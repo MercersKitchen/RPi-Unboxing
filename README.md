@@ -55,8 +55,9 @@ Steps
     - Use US Keyboard
   - Click NEXT
   - OPTIONAL: Change Password (Caution: security issue), "Hide Characters" means password HASHED
-  - Setup Screen: ensure geomoetry is OK
+  - Setup Screen: ensure geometry is OK
   - WiFi: skip
+  - Update Software: skip (until we have headless network access)
 
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
   - All settings were OK, 20190305
