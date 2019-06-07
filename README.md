@@ -62,6 +62,9 @@ Steps
   - CLICK Raspberry (Top Right Corner / Preferences / Raspberry Pi Configuration)
   - Interfaces TAB / Enable SSH, Enable VNC
   - Localization TAB: ensure all are set correctly
+- [] Bridge Connections on Laptop to RPi (requires Ethernet cable)
+  - WINDOWS Key / WiFi / Change Adapter Options
+  - Network Connections / 
   - OPEN Terminal:
     - ```X $ sudo apt update```
 
