@@ -60,7 +60,7 @@ Steps
   - Update Software: skip (until we have headless network access)
   - CLICK Restart
   - CLICK Raspberry (Top Right Corner / Preferences / Raspberry Pi Configuration)
-  
+  - Interfaces / Enable SSH, Enable VNC 
 
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
   - All settings were OK, 20190305
