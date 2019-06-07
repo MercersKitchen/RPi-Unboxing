@@ -152,5 +152,8 @@ Look up how to configure Static IP Address on the RPi
 
 Also, look up how to configure a Static IP Address on the DHCP Service on the Router
 
+Alternate way of Discovering IP Addresses for Locally Connected Machines
+- https://hobbyistsoftware.com/bonjourbrowser
+- Needs to be tested
 
 ---
