@@ -64,9 +64,13 @@ Steps
   - Localization TAB: ensure all are set correctly
 - [] Bridge Connections on Laptop to RPi (requires Ethernet cable)
   - WINDOWS Key / WiFi / Change Adapter Options
-  - Network Connections / 
-  - OPEN Terminal:
+  - Network Connections / Bridge Ethernet with WiFI (use Ctrl Key & RightClick)
+  - Verify IPv4 is bridged through eth0 (Ethernet port): ```X $ ifconfig```
+    - Not Bridged Address: 169.254.XXX.XXX, 10.XXX.XXX.XXX, or 127.0.0.XXX,
+    - Bridged Address: anything other than or
+  - OPEN Terminal, update OS Reading of Package Dates (must be done before installation of any software or upgrade)
     - ```X $ sudo apt update```
+  - Install X11VNC Server: ```X $ sudo apt install x11vnc```
 
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
   - All settings were OK, 20190305
