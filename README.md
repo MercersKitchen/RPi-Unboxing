@@ -70,11 +70,23 @@ Steps
     - Bridged Address: anything other than or
   - OPEN Terminal, update OS Reading of Package Dates (must be done before installation of any software or upgrade)
     - ```X $ sudo apt update```
-  - Install X11VNC Server: ```X $ sudo apt install x11vnc```
+  - Install X11VNC Server: ```X $ sudo apt install x11vnc``` (Note: password is needed when not in a secure LAN)
+  - Ensure software is installed on the Laptop: PuTTy & TightVNC
+    - PuTTy, <a href="https://www.putty.org/">accessed 20190607</a>, standard installation
+    - TightVNC, <a href="https://www.tightvnc.com/download.php">accessed 20190607</a>, CAUTION: ensure Server feature is unavailable on the laptop (Installation / Custom Install / X-out the Server)
+  - Execute PuTTy on Laptop: enter the Socket and connect (will need the Username and Password of the RPi)
+    - In the Terminal, execute X11VNC (```X $ x11vnc```)
+    - Record the port number given
+  - Execute TightVNC on the Laptop: enter the Socket and connect (will need the port number given by X11VNC through the Terminal of PuTTy using the SSH Protocol)
+    - remember the port number for X11VNC (5900 or 5901)
+
+**You now have a headless connection with the Raspberry Pi using a Virtual Network**
+- Alternate method to TightVNC & X11VNC is Chrome Extension "Real VNC" & Real VNC (in Raspberry Pi Configuration)
 
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
   - All settings were OK, 20190305
   - Note: Verify Expanded Memory: Advanced Options / run Expand memory to entire card, OK 20190305
+
 - [] Update, Upgrade, Reboot, and Clean OS (to most current Linux Packages)
   - Note: Update-Upgrade-Reboot should be completed every time RPi is started
   ```
@@ -94,31 +106,16 @@ Steps
   - Note: typing `sudo` when already at root does nothing, redundant
 - [] Install X11VNC on RPi to use with TightVNC Viewer over Local LAN Connection
   - For TightVNC Viewer Instructions for a Windows OS, see <a href="https://github.com/MercersKitchen/BYOD#tightvnc">Mercer's Kitchen BYOD Repository</a>, and <a href="https://github.com/MercersKitchen/BYOD/tree/master/TightVNC">TightVNC Viewing .exe downloadable</a>
-  - Installation of TightVNC Server on RPi (CAUTION: RPi must be secured with unique username and password already)
-    - ```X $ sudo apt update``` must be done since reboot, before installing any programs
-  ```
-  X $ sudo apt install x11vnc
-  ```
-  - Note: password is needed when not in a secure LAN
-- [] Must find RPi IP Address
-  - ```X $ ifconfig```, must have head-monitor until IP-Address is known
-  - Possible other headless methods: to find IP Address of RPi
-    - Using ARP Command on Windows Machine: ```X $ arp -a | X $ sudo arp -a```
-    - Angry IP Scanner
-    - SolarWinds IP Tracker
-    - My Lan Viewer
-    - ```X $ sudo nmap -sS 192.168.1.0/24```
-    - Login to the Router and look up the IP Table (specific instructions change depending on the router)
-- [] Configure ```X $ ifconfig``` : enabled SSH & VNC using IP Address, record port X11vnc is using
-- [] Use PuTTy or CDM.exe to SSH into RPi (perhaps start x11vnc)
-  - Test SSH & TightVNC usablitiy
-  - SSH port is 22
-  - Starting X11VNC: ```X $ X11VNC```
-- [] Use TightVNC on Viewing Computer, needs socket (and x11vnc to be started) so remember the port number for X11VNC (5900 or 5901)
-- [] Test that SSH and TightVNC Works
+- Possible other headless methods: to find IP Address of RPi
+  - Using ARP Command on Windows Machine: ```X $ arp -a | X $ sudo arp -a```
+  - Angry IP Scanner
+  - SolarWinds IP Tracker
+  - My Lan Viewer
+  - ```X $ sudo nmap -sS 192.168.1.0/24```
+  - Login to the Router and look up the IP Table (specific instructions change depending on the router)
 
 Note:
-- [] RPi as a WireGuard Server must be left on, IP from Router should be "static" (Look up how to configure Static IP Address)
+- [] RPi as a WireGuard Server must be left on, IP from Router should be "static" (Look up how to configure Static IP Address), DO NOT use any DHCP Service (should be turned off on the Router and RPi)
 
 ---
 
