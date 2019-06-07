@@ -135,6 +135,10 @@ If you get ```net.ipv4.ip_forward = 0```,
 please manually edit ```X $ sudo nano /etc/sysctl.conf``` and add ```net.ipv4.ip_forward = 1```
 - comment out `=0` line
 
+# Final Reminder
+Remember to DELETE your Bridged Connection before you shut down your laptop
+- Continuing a bridged connection will cause issues the next time you start your laptop and try to use WiFi
+
 ---
 
 # To Include
