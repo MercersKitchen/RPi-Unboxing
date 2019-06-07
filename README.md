@@ -1,6 +1,9 @@
 # RPi-Unboxing
 How to Unbox a Raspberry Pi and get it ready for Mercer's Kitchen Projects
 
+REMINDER: organize your SD Cards
+- Give them to Mr. Mercer, labeled inside your USB SD Reader-Writer and he will return it the next lesson
+
 **Note**: this document written with GitHub Markup List tool
 - Use in paper form or README.md form (see https://github.com/MercersKitchen/Markdown-ReadMe-Documentation for more information)
 
