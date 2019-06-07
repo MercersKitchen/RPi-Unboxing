@@ -54,8 +54,10 @@ Steps
     - Timezone: Edmonton
     - Use US Keyboard
   - Click NEXT
-  - OPTIONAL: Change Password (Caution: security issue)
-  
+  - OPTIONAL: Change Password (Caution: security issue), "Hide Characters" means password HASHED
+  - Setup Screen: ensure geomoetry is OK
+  - WiFi: skip
+
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
   - All settings were OK, 20190305
   - Note: Verify Expanded Memory: Advanced Options / run Expand memory to entire card, OK 20190305
