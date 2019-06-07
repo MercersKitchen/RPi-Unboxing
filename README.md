@@ -48,6 +48,14 @@ Steps
 - **Lesson Interruption**: if the lesson is interrupted, put the SD Card into the card reader and label the Card Reader with the student's name, return everything the next lesson with a RPi to connect locally
 - [] RPi complete SD Card installation, see <a href="https://www.raspberrypi.org/documentation/linux/software/apt.md">APT on RPi Documentation</a>, accessed 20190530
 - [] Configure ```Boot Settings``` with GUI and follow the prompts
+  - Set the following, (as of 20190607)
+    - Country: Canada
+    - Language: Canadian English
+    - Timezone: Edmonton
+    - Use US Keyboard
+  - Click NEXT
+  - OPTIONAL: Change Password (Caution: security issue)
+  
 - [] [Optional] Verify configuration in ```X $ sudo raspi-config```
   - All settings were OK, 20190305
   - Note: Verify Expanded Memory: Advanced Options / run Expand memory to entire card, OK 20190305
